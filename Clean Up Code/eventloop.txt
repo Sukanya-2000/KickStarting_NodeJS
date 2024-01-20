@@ -1,0 +1,17 @@
+Did you understand event loop ? Please explain it in your words if you did. If you didnt please raise a question in next class.
+
+Ans: The event loop is a fundamental concept in Node.js that enables its asynchronous, non-blocking I/O architecture. Here's a simplified explanation of how it works:
+
+Event Queue:
+Node.js applications execute code asynchronously, and events are at the core of this mechanism.
+When an asynchronous operation is completed, a corresponding event is added to the Event Queue.
+Event Loop:
+The event loop is a continuously running process that checks if there are any events in the Event Queue.
+If there are events, the event loop will pick them up one by one and execute their associated callback functions.
+Callback Execution:
+When an event's callback function is executed, it may trigger more asynchronous operations.
+These new operations, when completed, will generate new events that are added to the Event Queue.
+Non-blocking Nature:
+The event loop allows Node.js to handle multiple operations concurrently without waiting for each one to finish before moving to the next.
+This non-blocking behavior is crucial for efficiently managing a large number of concurrent connections and handling I/O operations without wasting time waiting for responses.
+In summary, the event loop is the heart of Node.js, managing the flow of asynchronous operations by processing events from the Event Queue. This architecture enables Node.js to handle high concurrency, making it suitable for applications with a large number of simultaneous connections or I/O-bound tasks.

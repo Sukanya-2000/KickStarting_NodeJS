@@ -1,0 +1,70 @@
+The --save-dev and --save flags are used with package managers like npm to manage dependencies in a Node.js project. Here's how they are typically used:
+
+--save-dev:
+Use this flag when installing packages that are only needed during development or for building the project.
+These dependencies are not required for the runtime of the application but are necessary for development tasks, testing, or building the project.
+Examples include testing frameworks, build tools, linters, etc.
+When you run npm install <package-name> --save-dev, the package is added to the devDependencies section in your package.json file.
+bash
+
+Copy code
+npm install <package-name> --save-dev 
+--save:
+Use this flag when installing packages that are required for the runtime of your application.
+These dependencies are necessary for the application to function correctly.
+Examples include web frameworks, utility libraries, and any modules your application relies on during execution.
+When you run npm install <package-name> --save, the package is added to the dependencies section in your package.json file.
+bash
+
+Copy code
+npm install <package-name> --save 
+In modern versions of npm (npm 5.x and later), the --save flag is no longer necessary. When you run npm install <package-name>, npm automatically adds the package to the dependencies section. Similarly, --save-dev is not required for development dependencies; npm adds them to the devDependencies section by default.
+
+bash
+
+Copy code
+npm install <package-name> # or for development dependencies npm install <package-name> --save-dev 
+Using these flags correctly helps manage your project's dependencies efficiently, separating development dependencies from runtime dependencies and making it easier for others to understand and contribute to your project.
+
+
+
+
+
+nodemon is a utility that solves the problem of having to manually restart your Node.js application every time you make changes to your code during development. Here's how it addresses this issue:
+
+Automatic Restart:
+nodemon monitors the files in your Node.js project for any changes.
+When it detects a change (such as modifying a file), it automatically restarts the Node.js application.
+Efficiency in Development:
+During development, developers often make frequent changes to their code.
+Without nodemon, you would have to manually stop and restart your Node.js server every time you make a change to see the effect.
+nodemon eliminates this manual step, providing a more efficient development workflow.
+Time-saving:
+By automatically restarting your Node.js application upon file changes, nodemon saves time that would otherwise be spent on stopping and restarting the server manually.
+Configuration Options:
+nodemon provides various configuration options, allowing you to customize its behavior according to your project's needs.
+For example, you can specify which file extensions to monitor, ignore specific directories or files, or execute specific tasks before restarting.
+To use nodemon, you typically install it globally using npm:
+
+bash
+
+Copy code
+npm install -g nodemon 
+And then, instead of running your Node.js application using the node command, you use nodemon:
+
+bash
+
+Copy code
+nodemon your-app.js 
+Overall, nodemon is a valuable tool for developers working on Node.js projects, providing a seamless and automated way to observe and apply code changes during the development process.
+
+
+
+
+
+
+
+
+
+
+
