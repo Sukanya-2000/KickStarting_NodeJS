@@ -1,0 +1,15 @@
+Buffers:
+
+Purpose: Buffers are used to handle binary data directly in memory. They are essentially chunks of memory outside of V8's heap, which can be manipulated more efficiently than JavaScript arrays when dealing with binary data (like images, audio, or network protocols).
+
+When to use: When you need to work with raw binary data, such as reading from or writing to files, handling network protocols, or processing binary streams.
+
+
+Streams:
+
+Purpose: Streams provide a mechanism for reading or writing data piece by piece, rather than loading the entire data into memory at once. They are designed for efficiency and are particularly useful when working with large datasets or handling real-time data.
+
+When to use:Reading large files: Instead of reading the entire file into memory, you can stream it in chunks, reducing memory usage.
+Handling network requests: Streams are useful for handling incoming data in chunks, which is beneficial for processing data as it arrives, without waiting for the entire payload.
+
+Data transformation: Streams allow you to transform data on-the-fly. For example, you can compress or decompress data while streaming it.
