@@ -1,0 +1,67 @@
+[Watch video 10 from this link] - What does destructuring do exactly. When would you use it
+
+
+Ans:  
+
+**What is Destructuring?**
+
+- It's a powerful feature that allows you to extract specific elements from arrays or properties from objects and assign them to individual variables in a concise and convenient way.
+- It essentially "unpacks" data structures into their constituent parts.
+
+**How Does It Work?**
+
+**1. Array Destructuring:**
+
+- Use square brackets `[]` to specify which elements you want to extract:
+
+   ```javascript
+   const numbers = [10, 20, 30];
+   const [first, second] = numbers; // first = 10, second = 20
+   ```
+
+- You can skip elements, handle rest elements, and even swap values:
+
+   ```javascript
+   const [, middle, , last] = numbers; // middle = 20, last = 30
+   const [a, b] = [b, a]; // Swap values
+   ```
+
+**2. Object Destructuring:**
+
+- Use curly braces `{}` to specify which properties you want to extract:
+
+   ```javascript
+   const person = { name: 'Alice', age: 30 };
+   const { name, age } = person; // name = 'Alice', age = 30
+   ```
+
+- You can use default values and the rest operator (`...`):
+
+   ```javascript
+   const { email = 'default@email.com', ...otherInfo } = person;
+   ```
+
+**When to Use Destructuring:**
+
+- **Accessing specific array elements or object properties concisely:**
+   - `const [x, y] = coordinates;`
+   - `const { name, age } = user;`
+- **Swapping variables:**
+   - `[a, b] = [b, a];`
+- **Extracting values from function arguments:**
+   - `function add(x, y) { return x + y; }`
+   - `const result = add(...numbers);`
+- **Decomposing function return values:**
+   - `const [width, height] = getSize();`
+- **Simplifying nested objects and arrays:**
+   - `const { user: { name, email }, settings } = data;`
+
+**Benefits of Destructuring:**
+
+- Cleaner, more concise code
+- Improved readability
+- Easier manipulation of data structures
+- Enhanced code maintainability
+- Reduction of repetitive code
+
+Destructuring is a valuable tool that can make your JavaScript code more expressive, readable, and maintainable. It's widely used in modern JavaScript development, so understanding it is essential.

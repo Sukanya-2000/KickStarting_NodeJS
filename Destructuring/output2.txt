@@ -1,0 +1,15 @@
+const arr1 = ['value1', 'value2']
+
+const [ val1, val2 ] = arr1
+
+
+
+console.log(val1)
+
+console.log(val2)
+
+
+
+Output: 
+value1
+value2
