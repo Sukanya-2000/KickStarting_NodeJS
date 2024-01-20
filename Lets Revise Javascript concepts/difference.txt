@@ -1,0 +1,14 @@
+Here is a comparison of fat arrow functions and the `this` keyword, structured column-wise:
+| Feature                 | Fat Arrow Function                                 | `this` Keyword                                    |
+|-------------------------|----------------------------------------------------|---------------------------------------------------|
+| **Definition**          | A concise syntax for writing anonymous functions | A keyword used to access an object's attributes   |
+|                         |                                                    | and methods within its methods                     |
+| **Access to object state** | No access to object state (attributes or methods)  | Has access to the object's attributes and methods |
+| **Use cases**           | Simple functions that don't need object state     | Methods that need access to object state          |
+| **Conciseness**         | More concise                                       | Less concise                                      |
+| **Complexity**          | Simpler                                            | More complex                                      |
+                   |
+
+
+
+
