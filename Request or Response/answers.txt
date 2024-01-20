@@ -1,0 +1,18 @@
+1. Explain the nodejs event driven architecture.
+
+Ans: Event-driven architecture: In Node.js, everything is based on events. Certain objects (like HTTP servers, the file system, or a stream) emit events when certain actions occur. These events trigger callback functions, allowing for asynchronous, non-blocking execution.
+
+2.How can it basically scale to handle 1000 of requests a sec. What helps node JS even though it is single threaded?
+
+Ans: Handling thousands of requests: Node.js can efficiently handle a large number of requests due to its non-blocking nature. While it's single-threaded, it uses an event loop to manage asynchronous operations. When a request is made, it doesn't wait for the result before moving on to the next request. Instead, it continues processing other requests, and when a task completes, its callback is triggered.
+
+3.What does process.exit do?
+
+Ans: Process.exit(): This function is used to terminate a Node.js process. It allows you to exit the application with a specified exit code. It's often used to gracefully shut down a Node.js server or to handle unexpected errors.
+
+4. What does req.url , req.header and req.method contain?
+
+Ans: req.url, req.headers, and req.method: In a Node.js server handling HTTP requests (using frameworks like Express), these properties are part of the request object (req):
+req.url: Contains the URL of the request.
+req.headers: Contains the headers sent with the request.
+req.method: Contains the HTTP method of the request (e.g., GET, POST).
