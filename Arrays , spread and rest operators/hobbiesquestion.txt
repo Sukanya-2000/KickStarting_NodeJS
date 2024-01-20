@@ -1,0 +1,4 @@
+How is hobbies const and it still doesnt error out when we add new elements to the array as in the video?
+
+Ans:  This is because the const keyword does not prevent us from modifying the contents of the array, it only prevents us from re-assigning the hobbies variable to a new array.
+

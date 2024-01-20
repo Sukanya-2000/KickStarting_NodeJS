@@ -1,0 +1,11 @@
+What according to you is spread opertor. Does spread operator create a new object or point to the same old object?
+
+Ans: The spread operator is a JavaScript operator that allows you to expand the elements of an iterable object into individual elements. It is often used to create copies of arrays or objects.
+
+	The spread operator can also be used to create copies of objects. For example, the following code creates a new object that contains all of the properties of the original object, plus the property name: 
+
+const originalObject = { age: 23, occupation: "Software Engineer" }; 
+
+const newObject = { ...originalObject, name: "Sukanya Bhattacharyya" }; 
+
+console.log(newObject);
