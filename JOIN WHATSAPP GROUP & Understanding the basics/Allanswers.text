@@ -1,0 +1,67 @@
+ **Here are the answers to your questions, presented in a well-structured format:**
+
+**Question 1:** Explain how the internet works in your own words.
+
+**Answer:**
+
+The internet is like a giant network of interconnected roads, where data travels instead of cars. Here's how it works:
+
+1. **Devices and Connections:** Computers, smartphones, tablets, and other devices act as houses along these roads. They connect to the internet through various means like Wi-Fi, cellular networks, or wired connections.
+2. **Packets and Routing:** When you request information (like visiting a website), your device breaks the request into small data packets, similar to packing luggage for a trip. Each packet has labels with the sender's and receiver's addresses.
+3. **ISPs and Routers:** These packets travel through a network of roads, which are physical cables and wireless signals. Internet Service Providers (ISPs) act as the transportation companies, managing these roads. Routers act like traffic signals, directing packets to the right path.
+4. **Reaching Destinations:** Packets hop from router to router, following the most efficient routes. They might even take different paths to reach the same destination, just like cars can take different roads to reach a city.
+5. **Reassembly and Delivery:** Once packets arrive at the destination server (like the website you requested), they're reassembled in the correct order like unpacking luggage. The server then processes the request and sends back a response, which travels back to your device through the same packet-routing process.
+
+**Question 2:** What are the core modules of Node.js?
+
+**Answer:**
+
+Node.js has several built-in modules that provide essential functionalities:
+
+1. **fs (File System):** Interacts with the computer's file system, allowing you to create, read, write, and delete files and directories.
+2. **path:** Manipulates file and directory paths in a platform-agnostic way.
+3. **http:** Creates web servers and handles HTTP requests and responses.
+4. **os:** Provides information about the operating system and interacts with it.
+5. **util:** Contains various utility functions for common tasks.
+6. **events:** Implements an event-driven architecture for handling asynchronous events.
+7. **stream:** Provides a way to handle streaming data efficiently.
+8. **querystring:** Parses and formats URL query strings.
+
+**Question 3:** Explain the use of each core module in detail.
+
+**Answer:** (Please see the descriptions provided for each module in Question 2.)
+
+**Question 4:** What are relative paths and absolute paths? How to define them?
+
+**Answer:**
+
+* **Relative Paths:** Paths that are relative to the current working directory. They start with the file or directory name, like `index.html` or `images/logo.png`.
+* **Absolute Paths:** Paths that specify the full location of a file or directory from the root directory of the file system. They usually start with a drive letter or root symbol (e.g., `C:\Users\John\Documents\Project` or `/home/user/project`).
+
+**Question 5:** What does createServer do?
+
+**Answer:**
+
+`createServer` is a function in Node.js that creates a new web server instance. It takes a callback function as an argument, which is executed whenever a new request is received by the server.
+
+**Question 6:** What are anonymous functions?
+
+**Answer:**
+
+Anonymous functions are functions without a name. They are often used as callbacks or for temporary tasks. They are defined using the `function` keyword, followed by parentheses and the function body:
+
+```javascript
+const myFunction = function() {
+  // Function body here
+};
+```
+
+**Question 7:** What do you think server.listen() exactly does? Why do we need it?
+
+**Answer:**
+
+`server.listen()` starts the web server and makes it listen for incoming connections on a specified port. It's essential because it:
+
+1. **Binds the Server to a Port:** It associates the server with a specific port number, allowing clients to connect to it.
+2. **Starts Listening for Requests:** It puts the server into active mode, waiting for incoming HTTP requests from clients.
+3. **Accepts and Handles Requests:** When a request arrives, it's accepted and handled by the server's callback function, generating appropriate responses.
